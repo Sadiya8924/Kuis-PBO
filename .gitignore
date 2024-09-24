@@ -7,9 +7,3 @@ out/
 
 # Mengabaikan file log
 *.log
-
-# Mengabaikan file dari IDE tertentu (misal IntelliJ IDEA, Eclipse)
-*.iml
-.idea/
-.project
-.classpath
