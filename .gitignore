@@ -1,0 +1,15 @@
+# Mengabaikan semua file class
+*.class
+
+# Mengabaikan folder bin dan out
+bin/
+out/
+
+# Mengabaikan file log
+*.log
+
+# Mengabaikan file dari IDE tertentu (misal IntelliJ IDEA, Eclipse)
+*.iml
+.idea/
+.project
+.classpath
