@@ -1,8 +1,5 @@
-import java.util.Scanner;
 public class MainApp {
     public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);
         
         Pembayaran pembayaran1 = new Pembayaran(1, "2024-09-24", 500000.00, 101, 202);
 
