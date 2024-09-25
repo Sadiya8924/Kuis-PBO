@@ -2,13 +2,21 @@ public class MainApp {
     public static void main(String[] args) {
         
         Kursus kursus1 = new Kursus(202, "Java Programming", "Belajar dasar pemrograman Java");
+        Kursus kursus2 = new Kursus(203, "Web Development", "Mempelajari pembuatan website dengan HTML, CSS, dan JavaScript");
 
         kursus1.tampilkanInfoKursus();
         kursus1.daftarPeserta();
         kursus1.bayar();
 
+        kursus2.tampilkanInfoKursus();
+        kursus2.daftarPeserta();
+        kursus2.bayar();
+
         Konten konten1 = new Konten(1, "Artikel", 15, "Belajar dasar permograman Java");
+        Konten konten2 = new Konten(2, "Video", 45, "HTML dan CSS Dasar");
+
         konten1.tampilkan();
+        konten2.tampilkan();
 
         Pembayaran pembayaran1 = new Pembayaran(1, "2024-09-25", 500000.0, 101, 202);
         Pembayaran pembayaran2 = new Pembayaran(2, "2024-09-26", 750000.0, 102, 203);
