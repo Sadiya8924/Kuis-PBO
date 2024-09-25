@@ -1,19 +1,18 @@
 public class Kursus {
-    private String idKursus;
-    private String namaKursus;
-    private String deskripsi;
+    private int idKursus;
+    private String namaKursus, deskripsi;
 
-    public Kursus(String idKursus, String namaKursus, String deskripsi) {
+    public Kursus(int idKursus, String namaKursus, String deskripsi) {
         this.idKursus = idKursus;
         this.namaKursus = namaKursus;
         this.deskripsi = deskripsi;
     }
 
-    public String getIdKursus() {
+    public int getIdKursus() {
         return idKursus;
     }
 
-    public void setIdKursus(String idKursus) {
+    public void setIdKursus(int idKursus) {
         this.idKursus = idKursus;
     }
 

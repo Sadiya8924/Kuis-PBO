@@ -1,21 +1,19 @@
 public class Konten {
-    private String idKonten;
-    private String tipeKonten; 
-    private int durasi;        
-    private String isiKonten;  
+    private int idKonten, durasi;
+    private String tipeKonten, isiKonten;  
 
-    public Konten(String idKonten, String tipeKonten, int durasi, String isiKonten) {
+    public Konten(int idKonten, String tipeKonten, int durasi, String isiKonten) {
         this.idKonten = idKonten;
         this.tipeKonten = tipeKonten;
         this.durasi = durasi;
         this.isiKonten = isiKonten;
     }
 
-    public String getIdKonten() {
+    public int getIdKonten() {
         return idKonten;
     }
 
-    public void setIdKonten(String idKonten) {
+    public void setIdKonten(int idKonten) {
         this.idKonten = idKonten;
     }
 
