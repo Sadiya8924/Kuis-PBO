@@ -1,6 +1,15 @@
 public class MainApp {
     public static void main(String[] args) {
         
+        Kursus kursus1 = new Kursus(202, "Java Programming", "Belajar dasar pemrograman Java");
+
+        kursus1.tampilkanInfoKursus();
+        kursus1.daftarPeserta();
+        kursus1.bayar();
+
+        Konten konten1 = new Konten(1, "Artikel", 15, "Belajar dasar permograman Java");
+        konten1.tampilkan();
+
         Pembayaran pembayaran1 = new Pembayaran(1, "2024-09-24", 500000.00, 101, 202);
 
         System.out.println("ID Pembayaran: " + pembayaran1.getId());
