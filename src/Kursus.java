@@ -1,48 +1,46 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Kursus
+ */
 public class Kursus {
-    private int idKursus;
-    private String namaKursus, deskripsi;
+    private String id;
+    private String nama;
+    private String deskripsi;
+    private int harga;
+    private List<Konten> daftarKonten;
 
-    public Kursus(int idKursus, String namaKursus, String deskripsi) {
-        this.idKursus = idKursus;
-        this.namaKursus = namaKursus;
+    public Kursus(String id, String nama, String deskripsi, int harga) {
+        this.id = id;
+        this.nama = nama;
         this.deskripsi = deskripsi;
+        this.harga = harga;
+        this.daftarKonten = new ArrayList<>();
     }
 
-    public int getIdKursus() {
-        return idKursus;
+    public String getId() {
+        return id;
     }
 
-    public void setIdKursus(int idKursus) {
-        this.idKursus = idKursus;
-    }
-
-    public String getNamaKursus() {
-        return namaKursus;
-    }
-
-    public void setNamaKursus(String namaKursus) {
-        this.namaKursus = namaKursus;
+    public String getNama() {
+        return nama;
     }
 
     public String getDeskripsi() {
         return deskripsi;
     }
 
-    public void setDeskripsi(String deskripsi) {
-        this.deskripsi = deskripsi;
+    public int getHarga() {
+        return harga;
     }
 
-    public void daftarPeserta() {
-        System.out.println("Peserta telah berhasil mendaftar di kursus: " + namaKursus);
+    public void tambahKonten(Konten konten) {
+        daftarKonten.add(konten);
     }
 
-    public void bayar() {
-        System.out.println("Pembayaran berhasil untuk kursus: " + namaKursus);
+    public List<Konten> getDaftarKonten() {
+        return daftarKonten;
     }
-
-    public void tampilkanInfoKursus() {
-        System.out.println("ID Kursus: " + idKursus);
-        System.out.println("Nama Kursus: " + namaKursus);
-        System.out.println("Deskripsi: " + deskripsi);
-    }
+    
 }
